@@ -1,0 +1,2 @@
+<?php
+require_once '../config.php';require_once '../includes/auth.php';require_admin();if($_SERVER['REQUEST_METHOD']!=='POST'){http_response_code(405);exit('Method not allowed');}verify_csrf();$id=(int)($_POST['id']??0);$s=$conn->prepare('DELETE FROM events WHERE id=?');$s->bind_param('i',$id);$s->execute();set_flash($s->affected_rows?'success':'error',$s->affected_rows?'Event deleted.':'Event not found.');redirect('dashboard.php');

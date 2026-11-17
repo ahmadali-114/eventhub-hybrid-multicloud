@@ -1,0 +1,1 @@
+<footer class="site-footer"><div>EventHub · College Fest Registration</div><div>Hybrid Multi-Cloud Portfolio Project</div></footer><script src="<?= h($asset_prefix ?? '') ?>assets/js/app.js"></script></body></html>

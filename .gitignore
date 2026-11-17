@@ -1,0 +1,18 @@
+.env
+.DS_Store
+*.log
+/vendor/
+.idea/
+.vscode/
+# Local backups and database exports
+backups/
+*.sql.gz
+*.dump
+
+# Private keys and certificates
+*.pem
+*.key
+*.crt
+
+# Local Docker Compose overrides
+compose.override.yaml
